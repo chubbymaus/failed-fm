@@ -31,7 +31,7 @@ const BlogIndex = ({post}) => {
         <title>{post.title} | Failed FM</title>
         <link rel="icon" href="#"/>
       </Head>
-      <div>
+      <div className="bg-slate-50 h-screen">
         {post.title}
         <hr/>
         {documentToReactComponents(post.body.json, renderOptions(post?.body.links))}
