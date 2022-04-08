@@ -32,9 +32,24 @@ const BlogIndex = ({post}) => {
         <link rel="icon" href="#"/>
       </Head>
       <div className="bg-slate-50 h-screen">
-        {post.title}
-        <hr/>
-        {documentToReactComponents(post.body.json, renderOptions(post?.body.links))}
+        <div className="relative py-16 overflow-hidden">
+          <div className="relative px-4 sm:px-6 lg:px-8">
+            <div className="text-md mx-12">
+              <h1>
+            <span className="block text-base text-center text-indigo-600 font-semibold tracking-wide uppercase">
+              Introducing
+            </span>
+                <span
+                  className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+              {post.title}
+            </span>
+              </h1>
+              <p className="mt-8 text-xl text-gray-500 leading-8">
+                {documentToReactComponents(post.body.json, renderOptions(post?.body.links))}
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   )
