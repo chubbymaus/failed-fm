@@ -34,7 +34,7 @@ const BlogIndex = ({post}) => {
       <div className="bg-slate-50 h-screen">
         <div className="relative py-16 overflow-hidden">
           <div className="relative px-4 sm:px-6 lg:px-8">
-            <div className="text-md mx-12">
+            <div className="text-md mx-auto sm:mx-12">
               <h1>
             <span className="block text-base text-center text-indigo-600 font-semibold tracking-wide uppercase">
               Introducing
